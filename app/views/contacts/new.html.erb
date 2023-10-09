@@ -2,14 +2,14 @@
   <h1>Vamos conversar?</h1>
   <h3>Preencha o formulario com suas necessidades que faremos um orçamento:</h3>
 
-  <%= simple_form_for @contact, url: new_contato_path, html: { class: 'form-group' } do |f| %>
-    <%= f.input :first_name, label: 'Nome', wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
-    <%= f.input :last_name, label: 'Sobrenome', wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
-    <%= f.input :company, label: 'Empresa', wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
-    <%= f.input :cnpj, label: 'CNPJ', wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
-    <%= f.input :phone_number, label: 'Telefone', wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
-    <%= f.input :email, label: 'Email', wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
-    <%= f.input :message, label: 'Sua necessidade', as: :text, wrapper_html: { class: 'form-group' }, input_html: { class: 'form-control' } %>
+  <%= simple_form_for @contact, url: contato_index_path do |f| %>
+    <%= f.input :first_name, label: 'Nome' %>
+    <%= f.input :last_name, label: 'Sobrenome' %>
+    <%= f.input :company, label: 'Empresa' %>
+    <%= f.input :cnpj, label: 'CNPJ' %>
+    <%= f.input :phone_number, label: 'Telefone' %>
+    <%= f.input :email, label: 'Email' %>
+    <%= f.input :message, label: 'Sua necessidade', as: :text %>
     <%= f.association :solutions, as: :check_boxes %>
     <%= f.button :submit, 'Enviar', class: "btn btn-primary" %>
   <% end %>
@@ -18,8 +18,8 @@
 <div class="container">
   <h3>Ou deixe seu email que entraremos em contato</h3>
 
-  <%= simple_form_for @contact, url: new_contato_path, html: { class:'form-group'} do |f| %>
-    <%= f.input :email, label:'Email', wrapper_html:{class:'form-group'}, input_html:{class:'form-control'} %>
+  <%= simple_form_for @contact, url: contato_index_path do |f| %>
+    <%= f.input :email, label:'Email' %>
     <%= f.button :submit,'Enviar',class:"btn btn-primary" %>
   <% end %>
 </div>
