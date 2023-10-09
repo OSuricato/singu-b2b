@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Ofelia Display Light", "Helvetica", "sans-serif";
-$headers-font: "Ofelia Display Bold", "Helvetica", "sans-serif";
+$body-font: "Ofelia Display Regular", "Helvetica", "sans-serif";
+$headers-font: "Ofelia Display Medium", "Helvetica", "sans-serif";
 
 // To use a font file (.otf) uncomment following lines
 @font-face {
-  font-family: "Ofelia Display Bold";
-  src: font-url('49185.otf') format('opentype');
+  font-family: "Ofelia Display Medium";
+  src: font-url('49194.otf') format('opentype');
 }
 
 @font-face {
-  font-family: "Ofelia Display Light";
-  src: font-url('49192.otf') format('opentype');
+  font-family: "Ofelia Display Regular";
+  src: font-url('49196.otf') format('opentype');
 }
