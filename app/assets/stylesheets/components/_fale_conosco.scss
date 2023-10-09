@@ -4,11 +4,17 @@
 
 .fale-conosco {
   background-color: #fcf4ec;
-  border-radius: 12px;
+  border-radius: 24px;
   padding: 20px;
   margin-bottom: 20px;
   img {
-    width: 240px;
-    height: auto;
+    height: 33vh;
+    object-fit: cover;
+    border-radius: 12px;
+    padding: 24px;
   }
+}
+
+.container-info {
+  padding: 24px;
 }

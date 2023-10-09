@@ -1,3 +1,8 @@
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .footer-links {
   display: flex;
   align-items: center;
@@ -6,8 +11,24 @@
 
 .footer-links-detail {
   display: flex;
+  a {
+    margin-right: 24px;
+  }
 }
 
 .footer-socials {
   display: flex;
+  a {
+    margin-left: 24px;
+  }
+
+}
+
+.footer-text {
+  width: 33vw;
+}
+
+.footer-clickables {
+  display: flex;
+  justify-content: space-between; 
 }
