@@ -11,7 +11,7 @@ $body-bg:                $light-gray;
 $font-size-base:         1rem;
 
 // Colors
-$body-color: $gray;
+$body-color: #000000;
 $primary:    $orange;
 $success:    $green;
 $info:       $yellow;
@@ -24,3 +24,11 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+
+.btn-primary {
+  color: white !important;
+}
+
+// .btn {
+//   padding: 6px;
+// }

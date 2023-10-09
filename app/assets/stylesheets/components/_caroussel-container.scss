@@ -1,0 +1,13 @@
+.caroussel-container {
+  padding-bottom: 24px;
+  padding-top: 24px;
+  img {
+    border-radius: 24px;
+    height: 60vh;
+    object-fit: cover;
+  }
+}
+
+.carousel-caption {
+  color: black;
+}
