@@ -1,0 +1,21 @@
+.email-form {
+  background-color: $brown;
+  border-radius: 24px;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+// preciso dar um jeito de colocar width 45% no campo de email
+
+.form-inline {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+// .form-control {
+//   flex-grow: 1;
+// }
