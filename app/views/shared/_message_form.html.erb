@@ -1,0 +1,15 @@
+<div class="container message-form">
+  <h3>Preencha o formulario com suas necessidades que faremos um orçamento:</h3>
+
+  <%= simple_form_for @contact, url: contato_index_path do |f| %>
+    <%= f.input :first_name, label: 'Nome' %>
+    <%= f.input :last_name, label: 'Sobrenome' %>
+    <%= f.input :company, label: 'Empresa' %>
+    <%= f.input :cnpj, label: 'CNPJ' %>
+    <%= f.input :phone_number, label: 'Telefone' %>
+    <%= f.input :email, label: 'Email' %>
+    <%= f.input :message, label: 'Sua necessidade', as: :text %>
+    <%= f.association :solutions, as: :check_boxes %>
+    <%= f.button :submit, 'Enviar', class: "btn btn-primary" %>
+  <% end %>
+</div>

@@ -1,25 +1,11 @@
-<div class="container">
-  <h1>Vamos conversar?</h1>
-  <h3>Preencha o formulario com suas necessidades que faremos um orçamento:</h3>
-
-  <%= simple_form_for @contact, url: contato_index_path do |f| %>
-    <%= f.input :first_name, label: 'Nome' %>
-    <%= f.input :last_name, label: 'Sobrenome' %>
-    <%= f.input :company, label: 'Empresa' %>
-    <%= f.input :cnpj, label: 'CNPJ' %>
-    <%= f.input :phone_number, label: 'Telefone' %>
-    <%= f.input :email, label: 'Email' %>
-    <%= f.input :message, label: 'Sua necessidade', as: :text %>
-    <%= f.association :solutions, as: :check_boxes %>
-    <%= f.button :submit, 'Enviar', class: "btn btn-primary" %>
-  <% end %>
+<div class="container caroussel-container">
+  <%= render "shared/contact_banner" %>
 </div>
 
 <div class="container">
-  <h3>Ou deixe seu email que entraremos em contato</h3>
+  <%= render "shared/message_form" %>
+</div>
 
-  <%= simple_form_for @contact, url: contato_index_path do |f| %>
-    <%= f.input :email, label:'Email' %>
-    <%= f.button :submit,'Enviar',class:"btn btn-primary" %>
-  <% end %>
+<div class="container">
+  <%= render "shared/email_form" %>
 </div>
