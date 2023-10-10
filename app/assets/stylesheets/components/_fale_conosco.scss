@@ -1,20 +1,30 @@
 .container-content {
   display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .container-content {
+    flex-direction: column;
+  }
 }
 
 .fale-conosco {
   background-color: #fcf4ec;
   border-radius: 24px;
   padding: 20px;
-  margin-bottom: 20px;
-  img {
-    height: 33vh;
-    object-fit: cover;
-    border-radius: 12px;
-    padding: 24px;
-  }
+  margin-bottom: 48px;
 }
 
 .container-info {
   padding: 24px;
+}
+
+.container-image {
+  img {
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 36px;
+    padding: 24px;
+  }
 }
