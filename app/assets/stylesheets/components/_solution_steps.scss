@@ -1,0 +1,26 @@
+.step-container {
+  display: flex;
+  align-items: center;
+}
+
+.solution-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+
+.step-info {
+  padding-left: 12px;
+}
+
+.step-number {
+  border: 3px solid $light-pink;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+  height: 3em;
+}
