@@ -10,4 +10,11 @@
 
 .carousel-caption {
   color: black;
+  text-align: start;
+}
+
+// Posicionamento de legenda e botao do caroussel da homepage
+.carousel-caption.d-none.d-md-block {
+  top: 33%;
+  width: 30%;
 }
