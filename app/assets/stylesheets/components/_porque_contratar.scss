@@ -1,0 +1,30 @@
+.porque-contratar {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .porque-contratar {
+    flex-direction: column;
+  }
+}
+
+.porque-contratar-image {
+  padding-right: 5vh;
+  img {
+    height: 50vh;
+    width: 50vh;
+    object-fit: cover;
+    border-radius: 36px;
+    padding: 24px;
+  }
+}
+
+.porque-contratar-info {
+  width: 40vh;
+}
+
+#porque-contratar-description {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
