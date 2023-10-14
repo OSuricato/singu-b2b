@@ -1,9 +1,9 @@
 <div id="carousselHome" class="carousel slide" data-bs-ride="false">
-  <div class="carousel-indicators">
+  <%# <div class="carousel-indicators">
     <button type="button" data-bs-target="#carousselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carousselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carousselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+  </div> %>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <%= image_tag("singu_home.jpg", class:"d-block w-100", alt:"Image 1") %>
@@ -13,21 +13,21 @@
         <%= link_to "fale com a singu!", new_contato_path, class: "btn btn-primary" %>
       </div>
     </div>
-    <div class="carousel-item">
+    <%# <div class="carousel-item">
       <%= image_tag("foto2.jpg", class:"d-block w-100", alt:"Image 2") %>
-      <div class="carousel-caption d-none d-md-block">
+      <%# <div class="carousel-caption d-none d-md-block">
         <h3>beleza e bem-estar onde seus colaboradores estiverem</h3>
         <p>Transforme a maneira como seus colaboradores se sentem com os nossos serviços de autocuidado. Conheça a Singu Empresas e coloque o bem-estar da sua equipe em primeiro lugar. </p>
         <%= link_to "fale com a singu!", new_contato_path, class: "btn btn-primary" %>
-      </div>
+      <%# </div>
     </div>
-    <div class="carousel-item">
+    <%# <div class="carousel-item">
       <%= image_tag("foto3.jpg", class:"d-block w-100", alt:"Image 3") %>
-      <div class="carousel-caption d-none d-md-block">
+      <%# <div class="carousel-caption d-none d-md-block">
         <h3>beleza e bem-estar onde seus colaboradores estiverem</h3>
         <p>Transforme a maneira como seus colaboradores se sentem com os nossos serviços de autocuidado. Conheça a Singu Empresas e coloque o bem-estar da sua equipe em primeiro lugar. </p>
         <%= link_to "fale com a singu!", new_contato_path, class: "btn btn-primary" %>
-      </div>
-    </div>
+      <%# </div> %>
+    <%# </div> %>
   </div>
 </div>
