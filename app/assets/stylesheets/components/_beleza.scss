@@ -27,8 +27,12 @@
   text-align: center;
   img {
     height: 15vh;
+    width: 12vw;
     object-fit: cover;
     border-radius: 12px;
+    border: 4px;
+    border-style: solid;
+    border-color: #fca4b4;
   }
 }
 
