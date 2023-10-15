@@ -5,47 +5,23 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new(contact_params)
-    if @contact.save
-      # Create a contact in HubSpot
-      require 'net/http'
-      require 'uri'
-      require 'json'
+    require 'hubspot-api-client'
 
-      uri = URI.parse("https://api.hubapi.com/contacts/v1/contact")
-      request = Net::HTTP::Post.new(uri)
-      request["Authorization"] = "Bearer #{ENV['HUBSPOT_PRIVATE_APP_KEY']}"
-      request["Content-Type"] = "application/json"
-      request.body = JSON.dump({
-        "properties" => [
-          {
-            "property" => "email",
-            "value" => @contact.email
-          },
-          {
-            "property" => "firstname",
-            "value" => @contact.first_name
-          },
-          {
-            "property" => "lastname",
-            "value" => @contact.last_name
-          }
-          # Add any other contact properties here
-        ]
-      })
+    api_client = Hubspot::Client.new(access_token: ENV['HUBSPOT_ACCESS_TOKEN'])
 
-      req_options = {
-        use_ssl: uri.scheme == "https",
-      }
+    properties = {
+      "email": "vitao@biglytics.net",
+      "phone": "(833) 929-0687",
+      "company": "B3glytics",
+      "website": "b3glytics.net",
+      "lastname": "Bartbosa",
+      "firstname": "Victor"
+      # add any other properties you want to set here
+    }
+    body = { associations: [], properties: properties }
 
-      response = Net::HTTP.start(uri.hostname, uri.port, req_options) do |http|
-        http.request(request)
-      end
-
-      # Handle a successful save.
-    else
-      render 'new'
-    end
+    api_response = api_client.crm.contacts.basic_api.post_crm_v3_objects_contacts(body: body)
+    puts api_response
   end
 
   private
