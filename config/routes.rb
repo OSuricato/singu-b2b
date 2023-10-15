@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get "/about", to: "pages#about", as: 'sobre'
 
   resources :solutions, only: [:index, :show], as: 'solucoes'
-  resources :contacts, only: [:new, :create], as: 'contato'
+  resources :contacts, only: [:new, :create]
 end

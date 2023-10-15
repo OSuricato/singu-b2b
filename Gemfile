@@ -77,4 +77,4 @@ group :test do
 
 end
 
-gem "hubspot-ruby"
+gem 'hubspot-api-client'
