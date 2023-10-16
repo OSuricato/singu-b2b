@@ -1,7 +1,20 @@
-<div class="solution-banner-container">
-  <div class="solution-banner-title">
+<% image_mapping = {
+  1 => "solucao_voucher.jpg",
+  2 => "solucao_beneficio.jpg",
+  3 => "solucao_corporate.jpg",
+  4 => "solucao_residencial.jpg",
+  5 => "solucao_festival.jpg",
+  6 => "solucao_evento.jpg"
+} %>
+
+
+<div class="solution-banner-container" >
+  <div class="solution-banner-title" >
     <h1><%= @solution.title %></h1>
     <p><%= @solution.description %></p>
     <%= link_to "fale com a singu!", new_contact_path, class: "btn btn-primary" %>
+  </div>
+  <div class="solution-image">
+    <%= image_tag image_mapping[@solution.id] %>
   </div>
 </div>

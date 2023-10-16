@@ -16,7 +16,7 @@ Solution.create(
 Solution.create(
   title: "assinatura singu",
   subtitle: "singu benefícios",
-  description: "Placeholder Description",
+  description: "Deixe o pacote de benefícios da sua empresa ainda mais completo oferecendo soluções de bem-estar e beleza mensal para seus colaboradores.",
   step_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet nibh vel est rhoncus rhoncus.",
   step_2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet nibh vel est rhoncus rhoncus.",
   step_3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet nibh vel est rhoncus rhoncus.",
