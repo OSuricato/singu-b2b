@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_16_020037) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_16_200705) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -24,6 +24,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_16_020037) do
     t.text "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "voucher_singu"
+    t.boolean "assinatura_singu"
+    t.boolean "corporativo_singu"
+    t.boolean "residencial_singu"
+    t.boolean "eventos_singu"
+    t.boolean "dia_especial_singu"
   end
 
   create_table "contacts_solutions", id: false, force: :cascade do |t|
