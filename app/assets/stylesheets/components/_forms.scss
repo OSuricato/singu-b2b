@@ -10,7 +10,6 @@
 
 
 .mb-3.email.optional.contact_email {
-  width: 45%;
   margin-right: 4px;
   border-radius: 12px;
 }
@@ -30,6 +29,29 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em; /* Adjust as needed */
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .mb-3.string.optional {
+    width: 100% !important;
+  }
+
+  .mb-3.tel.optional {
+    width: 100% !important;
+  }
+
+  .mb-3.text.optional {
+    width: 100% !important;
+  }
+
+  .mb-3.email.optional.contact_email {
+    width: 100% !important;
+  }
+
 }
 
 .form-row .form-control {
@@ -40,4 +62,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+// .form-spacing {
+//   width: 100%;
+// }
+
+.mb-3.string.optional {
+  width: 49%;
+}
+
+.mb-3.tel.optional {
+  width: 49%;
+}
+
+.mb-3.text.optional {
+  width: 100%;
+}
+
+.mb-3.email.optional.contact_email {
+  width: 49%;
 }

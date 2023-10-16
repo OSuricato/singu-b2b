@@ -2,7 +2,7 @@
   <h3>Ou deixe seu email que entraremos em contato</h3>
 
   <%= simple_form_for @contact, url: contacts_path, method: :post, html: { class: 'form-inline' } do |f| %>
-    <%= f.input :email, label: false, placeholder: 'e-mail', input_html: { class: 'form-control mr-2' } %>
+    <%= f.input :email, label: false, placeholder: 'Email', input_html: { class: 'form-control mr-2' } %>
     <%= f.button :submit,'Enviar',class:"btn btn-primary" %>
   <% end %>
 </div>
