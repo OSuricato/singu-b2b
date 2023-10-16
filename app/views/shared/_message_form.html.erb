@@ -3,8 +3,8 @@
 
   <%= simple_form_for @contact, url: contacts_path do |f| %>
     <div class="form-row">
-      <%= f.input :first_name, label: false, placeholder: 'Nome', input_html: { class: 'form-control' } %>
-      <%= f.input :last_name, label: false, placeholder: 'Sobrenome', input_html: { class: 'form-control' } %>
+      <%= f.input :first_name, label: false, placeholder: 'Nome', input_html: { class: 'form-spacing form-control' } %>
+      <%= f.input :last_name, label: false, placeholder: 'Sobrenome', input_html: { class: 'form-spacing form-control' } %>
     </div>
     <div class="form-row">
       <%= f.input :company, label: false, placeholder: 'Empresa', input_html: { class: 'form-control' } %>

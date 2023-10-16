@@ -2,10 +2,48 @@
   padding-top: 24px;
 }
 
+.nav-link.active {
+  font-weight: bolder;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
 }
+
+.zoom:hover {
+  transform: scale(1.1); /* You can adjust the scale factor as needed */
+  transition: transform 0.2s ease; /* Add a smooth transition effect */
+}
+
+// * Efeito em que os botoes balançam (nao ativar)
+// @keyframes zoom {
+//   0% {
+//     transform: scale(1);
+//     rotate: 0deg;
+//   }
+//   25% {
+//     transform: scale(1.1);
+//     rotate: 10deg;
+//   }
+//   50% {
+//     transform: scale(0.9);
+//     rotate: -10deg;
+//   }
+//   75% {
+//     transform: scale(1.1);
+//     rotate: 10deg;
+//   }
+//   100% {
+//     transform: scale(1);
+//     rotate: 0deg;
+//   }
+// }
+
+// .zoom:hover {
+//   animation: zoom 1s infinite; /* Adjust the duration and iteration as needed */
+//   transform-origin: center;
+// }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
