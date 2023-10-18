@@ -3,7 +3,7 @@
 
   <%= simple_form_for @contact, url: contacts_path, method: :post, html: { class: 'form-inline' } do |f| %>
     <div class="email-form-fields">
-      <%= f.input :email, label: false, placeholder: 'Email', input_html: { class: 'form-control mr-2' } %>
+      <%= f.input :email, label: false, placeholder: 'Email', input_html: { class: 'form-control mr-2 email-width' } %>
       <%= f.button :submit,'Enviar',class:"btn btn-primary" %>
     </div>
   <% end %>

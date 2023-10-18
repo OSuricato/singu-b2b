@@ -109,3 +109,9 @@
 .new_contact {
   padding-top: 24px;
 }
+
+@media (min-width: 992px) {
+  .email-width {
+    width: 500px !important;
+  }
+}
