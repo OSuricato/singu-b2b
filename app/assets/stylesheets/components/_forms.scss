@@ -8,12 +8,17 @@
   margin-bottom: 36px;
 }
 
+.email-form-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .mb-3.email.optional.contact_email {
   margin-right: 4px;
   border-radius: 12px;
+  width: 100%;
 }
-// preciso dar um jeito de colocar width 45% no campo de email
 
 .form-inline {
   display: flex;
@@ -21,9 +26,16 @@
   align-items: flex-start;
 }
 
-// .form-control {
-//   flex-grow: 1;
-// }
+.form-control {
+  background-color: $form-field;
+  border-color: $form-field;
+  border-radius: 8px;
+}
+
+.form-check-input {
+  background-color: $form-field;
+  border-color: $form-field;
+}
 
 .form-row {
   display: flex;
@@ -82,4 +94,8 @@
 
 .mb-3.email.optional.contact_email {
   width: 49%;
+}
+
+.new_contact {
+  padding-top: 24px;
 }
