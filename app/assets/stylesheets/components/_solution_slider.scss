@@ -1,0 +1,37 @@
+.solution-slider {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.solution-slider:hover .slides {
+  animation-play-state: paused;
+}
+
+.slides {
+  display: inline-block;
+  animation: 10s slide infinite linear;
+  padding: 24px;
+  text-align: center;
+}
+
+.slide-image {
+  img {
+  height: 40vh;
+  width: 26vh;
+  border-radius: 12px;
+  object-fit: cover;
+  }
+}
+
+.slide-info {
+  padding-top: 24px
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
