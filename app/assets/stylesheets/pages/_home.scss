@@ -28,3 +28,15 @@
   padding-left: 5%;
   width: 45%;
 }
+
+@media (max-width: 991px) {
+  .home-banner-content {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-home-banner-content {
+    display: none;
+  }
+}
