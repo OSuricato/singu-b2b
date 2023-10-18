@@ -20,7 +20,7 @@ class ContactsController < ApplicationController
       "email": params[:contact][:email],
       "phone": params[:contact][:phone_number],
       "company": params[:contact][:company],
-      "website": "b3glytics.net",
+      "message": params[:contact][:message],
       "lastname": params[:contact][:last_name],
       "firstname": params[:contact][:first_name],
       "cnpj": params[:contact][:cnpj],
