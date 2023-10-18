@@ -30,13 +30,18 @@ class ContactsController < ApplicationController
       "residencial_singu": params[:contact][:residencial_singu],
       "eventos_singu": params[:contact][:eventos_singu],
       "dia_especial_singu": params[:contact][:dia_especial_singu]
-      # Add any other properties you want to set here
     }
     body = { associations: [], properties: properties }
 
     begin
       api_response = api_client.crm.contacts.basic_api.create(body: body)
-      flash[:notice] = 'Contato recebido com sucesso!'
+
+      respond_to do |format|
+        format.turbo_stream do
+          render turbo_stream: turbo_stream.append(:notices, partial: 'shared/notice', locals: { notice: 'Mensagem enviada com sucesso' })
+        end
+        format.html { redirect_to new_contact_path, notice: 'Contato recebido com sucesso!' }
+      end
     rescue StandardError => e
       if e.message.include?('already exists')
         flash[:error] = 'Esse email já foi registrado.'
@@ -44,10 +49,11 @@ class ContactsController < ApplicationController
         flash[:error] = 'Ocorreu um erro ao criar o contato.'
         puts "Exception when calling ContactsApi->create: #{e}"
       end
-    end
 
-    redirect_to new_contact_path
+      redirect_to new_contact_path
+    end
   end
+
 
 
   private
