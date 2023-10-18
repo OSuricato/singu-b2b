@@ -1,4 +1,4 @@
-.home-banner-container {
+.about-banner-container {
   position: relative;
   width: 100%;
   height: 60vh;
@@ -9,8 +9,8 @@
   overflow: hidden; /* Hide overflow from the background image */
 }
 
-.home-banner-bg {
-  background-image: url('singu_home.jpg');
+.about-banner-bg {
+  background-image: url('singu_sobre_nos.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -22,7 +22,7 @@
   transition: transform 0.2s ease; /* Add a smooth transition for the parallax effect */
 }
 
-.home-banner-content {
+.about-banner-content {
   display: flex;
   flex-direction: column;
   padding-left: 5%;
