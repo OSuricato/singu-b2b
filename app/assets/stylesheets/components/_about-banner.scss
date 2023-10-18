@@ -28,3 +28,20 @@
   padding-left: 5%;
   width: 45%;
 }
+
+
+@media (max-width: 991px) {
+  .about-banner-content {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-about-banner-content {
+    display: none;
+  }
+}
+
+.mobile-about-banner-content {
+  padding-top: 12px;
+}
