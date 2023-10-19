@@ -10,6 +10,7 @@
   align-items: center;
   margin-bottom: 48px;
   padding-right: 0;
+  padding-left: 0;
 }
 
 
@@ -26,26 +27,18 @@
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 24px;
   }
-  .casa {
-    height: 175px !important;
-    width: 175px !important;
-  }
-  .aeroporto {
-    height: 175px !important;
-    width: 175px !important;
-  }
-  .trabalho {
-    height: 175px !important;
-    width: 175px !important;
-  }
+  .casa,
+  .aeroporto,
+  .trabalho,
   .eventos {
-    height: 175px !important;
-    width: 175px !important;
+    height: 35vw !important; /* Adjust as needed */
+    width: 35vw !important; /* Adjust as needed */
+
+  // grid-column: span 2 !important;
   }
 
   .beleza-item {
     margin: 6px;
-    // border: 3px solid $light-pink !important;
   }
 
   .beleza-item.casa {
@@ -83,6 +76,7 @@
 
 .beleza-info {
   padding: 3%;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
