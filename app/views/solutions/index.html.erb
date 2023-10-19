@@ -1,8 +1,8 @@
-<div class="container caroussel-container">
+<div class="container caroussel-container" data-controller="scroll-animation">
   <%= render "shared/banner_solutions" %>
 </div>
 
-<div class="slider-container">
+<div class="slider-container" data-controller="scroll-animation">
   <%= render "shared/solution_slider" %>
 </div>
 
@@ -10,4 +10,6 @@
   <%= render "shared/solucoes" %>
 </div>
 
-<%= render "shared/fale_conosco" %>
+<div data-controller="scroll-animation">
+  <%= render "shared/fale_conosco" %>
+</div>
