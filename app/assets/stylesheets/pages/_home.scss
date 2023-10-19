@@ -22,6 +22,12 @@
   transition: transform 0.2s ease; /* Add a smooth transition for the parallax effect */
 }
 
+@media (max-width: 768px) {
+  .home-banner-bg {
+    background-position: 85%;
+  }
+}
+
 .home-banner-content {
   display: flex;
   flex-direction: column;

@@ -1,13 +1,15 @@
-<div class="container caroussel-container">
+<div class="container caroussel-container" data-controller="scroll-animation">
   <%= render "shared/banner_home" %>
 </div>
 
-<div class="container home-title">
+<div class="container home-title" data-controller="scroll-animation">
   <h3>conheça as experiências de bem-estar que temos pra você </h3>
 </div>
 
-<div class="container caroussel-container">
+<div class="container caroussel-container" data-controller="scroll-animation">
   <%= render "shared/caroussel_beneficios" %>
 </div>
 
-<%= render "shared/fale_conosco" %>
+<div data-controller="scroll-animation">
+  <%= render "shared/fale_conosco" %>
+</div>
