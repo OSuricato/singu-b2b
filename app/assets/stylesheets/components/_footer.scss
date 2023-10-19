@@ -46,6 +46,11 @@
   .footer-socials {
     padding-top: 24px;
     padding-bottom: 24px;
+    width: 20vw;
+    justify-content: space-between;
+    a {
+      margin-left: 0;
+    }
   }
 }
 
