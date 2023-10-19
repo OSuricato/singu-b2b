@@ -4,6 +4,9 @@ export default class extends Controller {
   connect() {
     this.scrollHandler = this.checkScroll.bind(this);
     window.addEventListener("scroll", this.scrollHandler);
+    this.element.addEventListener("animationend", () => {
+      this.element.classList.add("animation-done");
+    });
   }
 
   disconnect() {
@@ -11,10 +14,12 @@ export default class extends Controller {
   }
 
   checkScroll() {
-    this.element.classList.toggle(
-      "animate-on-scroll",
-      this.isVisible(this.element),
-    );
+    if (!this.element.classList.contains("animation-done")) {
+      this.element.classList.toggle(
+        "animate-on-scroll",
+        this.isVisible(this.element)
+      );
+    }
   }
 
   isVisible(element) {
@@ -23,6 +28,5 @@ export default class extends Controller {
 
     // Change the '0' to whatever offset you'd like to use.
     return elementTop <= viewportBottom - 0;
-
   }
 }
