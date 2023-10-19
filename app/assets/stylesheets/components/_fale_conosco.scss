@@ -28,3 +28,11 @@
     padding: 24px;
   }
 }
+
+@media (max-width: 991px) {
+  .container-image {
+    img {
+      height: 30vh !important;
+    }
+  }
+}
