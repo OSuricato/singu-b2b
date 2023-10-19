@@ -18,6 +18,7 @@
   border-radius: 24px;
   width: 48%;
   margin-top: 24px;
+  position: relative;
 }
 
 @media (max-width: 991px) {
@@ -37,4 +38,15 @@
 
 .solution-info {
   padding: 24px;
+}
+
+.solution .solution-info .btn { /* New */
+  position: absolute;
+  bottom: 24px;
+  left: 50%; /* New */
+  transform: translateX(-50%); /* New */
+}
+
+.solution .solution-info { /* New */
+  padding-bottom: 50px; /* Adjust as needed */
 }

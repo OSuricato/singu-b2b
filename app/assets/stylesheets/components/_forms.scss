@@ -11,6 +11,7 @@
 .email-form-fields {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -18,6 +19,11 @@
   margin-right: 4px;
   border-radius: 12px;
   width: 100%;
+
+}
+
+#email-send-button {
+  margin-bottom: 1rem;
 }
 
 .form-inline {
@@ -69,6 +75,7 @@
 
   .form-row {
     display: grid !important;
+    width: 100%;
   }
 
   .solution-checkbox {
@@ -85,10 +92,6 @@
   flex-direction: column;
   align-items: center;
 }
-
-// .form-spacing {
-//   width: 100%;
-// }
 
 .mb-3.string.optional {
   width: 49%;
