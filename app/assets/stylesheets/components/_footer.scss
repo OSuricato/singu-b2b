@@ -37,6 +37,15 @@
 @media (max-width: 991px) {
   .footer-text {
     width: 100%;
+    text-align: center;
+  }
+  .footer-clickables {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer-socials {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 

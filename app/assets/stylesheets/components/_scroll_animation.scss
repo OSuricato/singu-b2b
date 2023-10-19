@@ -10,5 +10,9 @@
 }
 
 .animate-on-scroll {
-  animation: slide-up 0.5s ease-out;
+  animation: slide-up 1s ease-out forwards;
+}
+
+[data-controller="scroll-animation"] {
+  opacity: 0;
 }
